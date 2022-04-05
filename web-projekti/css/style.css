@@ -26,6 +26,10 @@ html{
     margin-left:30%;
 }
 
+.col-navContent li{
+    max-width: 250px;
+}
+
 
 
 
