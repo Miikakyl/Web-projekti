@@ -30,6 +30,11 @@ th, td {
     padding-right: 80px;
 }
 
+#photoContainer img {
+    height: 100%;
+    width: 100%;
+}
+
 
 
 
