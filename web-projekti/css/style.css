@@ -42,6 +42,10 @@ th, td {
     background-image: url(../logoAndBackgroundImage/Horizontal\ background\ image.jpg); 
 }
 
+#photoContainer p{
+    padding: 100px;
+}
+
 
 
 
