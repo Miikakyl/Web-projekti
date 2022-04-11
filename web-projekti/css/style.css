@@ -6,11 +6,18 @@
 html{
     margin: 10px;
 }
+/*[class*="col"] {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*/
 .row > [class*="col"] {
     padding:0px;
 }
 
-    
+
 .navbar-nav img{ 
     float: left;
     height: 100px;
