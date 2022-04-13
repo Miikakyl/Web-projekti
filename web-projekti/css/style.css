@@ -18,6 +18,8 @@ html{
 }
 
 
+
+
 .navbar-nav img{ 
     float: left;
     height: 100px;
@@ -53,6 +55,7 @@ th, td {
     height: 500px;
     background-image: url(../logoAndBackgroundImage/Horizontal\ background\ image.jpg); 
 }
+
 #photoContainer p{
     padding:10px;
 }
