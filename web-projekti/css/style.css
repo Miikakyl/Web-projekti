@@ -18,6 +18,8 @@ html{
 }
 
 
+
+
 .navbar-nav img{ 
     float: left;
     height: 100px;
@@ -53,6 +55,7 @@ th, td {
     height: 500px;
     background-image: url(../logoAndBackgroundImage/Horizontal\ background\ image.jpg); 
 }
+
 #photoContainer p{
     padding:10px;
 }
@@ -62,6 +65,17 @@ th, td {
     background-image: url(../logoAndBackgroundImage/Horizontal\ background\ image.jpg); 
 }
 
+/* Muutoksia sidebardin ja articlen väleihin */
+
+.pl-3 { 
+    padding-left: 8px !important; 
+} 
+
+@media only screen and (max-width: 576px) {
+    .pl-3 {
+        padding-left: 0px !important;
+    }
+  }
 
 
 
