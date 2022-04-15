@@ -65,6 +65,8 @@ th, td {
     background-image: url(../logoAndBackgroundImage/Horizontal\ background\ image.jpg); 
 }
 
+/* Muutoksia sidebardin ja articlen väleihin */
+
 .pl-3 { 
     padding-left: 8px !important; 
 } 
