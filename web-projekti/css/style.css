@@ -65,6 +65,15 @@ th, td {
     background-image: url(../logoAndBackgroundImage/Horizontal\ background\ image.jpg); 
 }
 
+.pl-3 { 
+    padding-left: 8px !important; 
+} 
+
+@media only screen and (max-width: 576px) {
+    .pl-3 {
+        padding-left: 0px !important;
+    }
+  }
 
 
 
