@@ -57,7 +57,8 @@ th, td {
 }
 
 #photoContainer p{
-    padding:10px;
+    padding:100px;
+    font-size: 115%;
 }
 
 #usersPortal {
