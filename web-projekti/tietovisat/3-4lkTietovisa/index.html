@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap css files-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid border-bottom bg-light d-none d-sm-block">
+        <div class="row m-2 p-1">
+            <div class="col-12 d-flex justify-content-center">
+                <img id="banner" src="affinityPhoto.png" alt=""></div></div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center my-5">
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+                <h1> Matikkavisa 3-4lk
+                    <ion-icon name="calculator-outline"></ion-icon>
+                </h1>
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col">
+                <div id="frame" class="position-relative d-flex flex-column align-items-center">
+                    <button id="startTheGame" class="btns" onclick="startTheGame()">Aloita pelaaminen</button>
+                    <button class="btns" id="goBackBtn">Palaa etusivulle</button>
+                </div>
+            </div>
+        </div>
+        <div class="row row-resultTxt">
+            <div id="resultTxtArea"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="bulbArea">
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Boostrap js files-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--Boostrap js files-->
+<!--Ionicons icon Scripts-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--Ionicons icon Scripts-->
+<script src="script.js"></script>
+</body>
+</html>
+
+<!--Tee animaatiot css:n
+    Siisti script.js-->
