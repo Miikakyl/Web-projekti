@@ -1,0 +1,59 @@
+
+/*marginaalit*/
+
+html {
+    margin: 15px;
+}
+
+/*tilat reunoille*/
+
+.row {
+    gap: 20px;
+}
+
+/*tietovisan kuvat*/
+
+.car, .football, .basketball, .volleyball, .icehockey, .baseball, .american, .tennis, .badminton, .running, .gym {
+    background-image: cover;
+    width: 100%;
+}
+
+/*vastaustekstien lihavointi*/
+
+#football, #basket, #volleyball, #icehockey, #baseball, #american, #tennis, #badminton, #race, #fitness {
+    font-weight: bold;
+}
+
+/*virheilmoituksen määrittely*/
+
+#football_error, #basket_error, #volleyball_error, #icehockey_error, #baseball_error, #american_error, #tennis_error, #badminton_error, #race_error, #fitness_error {
+    color: red;
+}
+
+/*alatunnisteen tilan ja sijainnin määrrittely*/
+
+.teksti {
+    float: right;
+    padding-top: 8px;
+}
+
+th, td {
+    padding-right: 80px;
+}
+
+/*otsikoiden määrrittely*/
+
+h6 {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
