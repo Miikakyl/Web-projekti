@@ -10,7 +10,7 @@ h1{
   font-weight: 300;
   margin: 0px;
   padding: 10px;
-  font-size: 100px;
+  font-size: 80px;
   color: black;
 }
 .question{
@@ -29,7 +29,7 @@ h1{
 button{
   font-family: 'Work Sans', sans-serif;
 	font-size: 22px;
-	background-color: #279;
+	background-color: #9e23ff;
 	color: #fff;
 	border: 0px;
 	border-radius: 3px;
@@ -38,7 +38,7 @@ button{
 	margin-bottom: 20px;
 }
 button:hover{
-	background-color: #38a;
+	background-color: rgb(93, 0, 255);
 }
 
 
