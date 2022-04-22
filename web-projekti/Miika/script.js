@@ -233,4 +233,4 @@ function endAndStartOver() {
     },2000)
 }
 
-goBackBtn.addEventListener("click", () => window.location.href = '../../kotisivu.html') // Palaa etusivulle
+goBackBtn.addEventListener("click", () => window.location.href = '../kotisivu.html') // Palaa etusivulle
