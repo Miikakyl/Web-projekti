@@ -167,7 +167,7 @@
           b: "Varsova",
           c: "Budapest"
         },
-        correctAnswer: "b"
+        correctAnswer: "a"
       },
       {
         question: "Mikä on Ukrainan pääkaupunki?",
