@@ -39,6 +39,12 @@ th, td {
     padding-right: 80px;
 }
 
+th {
+    color:  rgb(22, 21, 21);
+    font-weight: 645;
+    
+}
+
 /*
 #photoContainer img {
     height: 100%;
@@ -75,7 +81,7 @@ div > a {
 }
 
 div > a:hover {
-    font-weight: 600;
+    font-weight: 645;
     color: black;
 }
 
