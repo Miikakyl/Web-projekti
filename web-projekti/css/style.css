@@ -73,8 +73,13 @@ th, td {
 
 /* Sidebarin lihavointi */
 
+div > a {
+    color: rgb(22, 21, 21);
+}
+
 div > a:hover {
-    font-weight: bold;
+    font-weight: 630;
+    color: black;
 }
 
 @media only screen and (max-width: 576px) {
