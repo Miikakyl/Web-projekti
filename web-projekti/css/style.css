@@ -45,6 +45,10 @@ th {
     
 }
 
+#flush {
+    background-color: orange;
+}
+
 /*
 #photoContainer img {
     height: 100%;
