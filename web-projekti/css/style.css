@@ -64,7 +64,7 @@ th {
 }
 
 #photoContainer p{
-    padding:100px;
+    padding: 100px;
 }
 
 #usersPortal {
@@ -97,7 +97,14 @@ span {
     .pl-3 {
         padding-left: 0px !important;
     }
+
+    #photoContainer p {
+        padding-left: 10px;
+        text-align:left;
+    }
   }
+
+
 
 
 
