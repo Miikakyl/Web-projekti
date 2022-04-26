@@ -71,6 +71,12 @@ th, td {
     padding-left: 8px !important; 
 } 
 
+/* Sidebarin lihavointi */
+
+div > a:hover {
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 576px) {
     .pl-3 {
         padding-left: 0px !important;
