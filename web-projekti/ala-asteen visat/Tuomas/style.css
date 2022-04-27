@@ -3,14 +3,12 @@
 
 html {
     margin: 15px;
-    background-image: url(../Tuomas/kuvat/Background\ image222.jpg);
 }
 
 /*tilat reunoille*/
 
 .row {
     gap: 20px;
-    background-image: url(../Tuomas/kuvat/Background\ image222.jpg);
 }
 
 div[role="alert"] {
@@ -69,6 +67,18 @@ h6 {
     font-weight: bold;
 }
 
+/*Fonttien pienentäminen responsoinnin takia*/
+
+@media only screen and (max-width: 489px) {
+   h6, p, label {
+       font-size: 14px;
+   }
+
+   h4 {
+       font-size: 20px;
+   }
+
+  }
 
 
 
