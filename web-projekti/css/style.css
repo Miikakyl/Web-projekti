@@ -36,8 +36,9 @@ html{
 }
 
 th, td {
-    padding-right: 60px;
+    padding-right: 40px;
 }
+
 
 th {
     color:  rgb(22, 21, 21);
@@ -101,6 +102,18 @@ span {
     #photoContainer p {
         padding-left: 10px;
         text-align:left;
+    }
+
+    a.nav-link {
+        font-size: 14px;
+    }
+
+    p, th, td, a{
+        font-size: 14px;
+    }
+
+    .accordion-button {
+        font-size: 14px;
     }
   }
 
