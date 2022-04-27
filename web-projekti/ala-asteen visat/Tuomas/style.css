@@ -3,13 +3,33 @@
 
 html {
     margin: 15px;
+    background-image: url(../Tuomas/kuvat/Background\ image222.jpg);
 }
 
 /*tilat reunoille*/
 
 .row {
     gap: 20px;
+    background-image: url(../Tuomas/kuvat/Background\ image222.jpg);
 }
+
+div[role="alert"] {
+    top: 10px;
+    background-color:rgb(234, 234, 240);
+    color: black;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+div .btn {
+    background-color: grey;
+    color: white;
+}
+
+.empty {
+    display: none;
+}
+
 
 /*tietovisan kuvat*/
 
@@ -44,10 +64,10 @@ th, td {
 /*otsikoiden määrrittely*/
 
 h6 {
-    font-size: 14px;
+    font-size: 15px;
     padding-top: 10px;
+    font-weight: bold;
 }
-
 
 
 
