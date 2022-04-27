@@ -11,24 +11,6 @@ html {
     gap: 20px;
 }
 
-div[role="alert"] {
-    top: 10px;
-    background-color:rgb(234, 234, 240);
-    color: black;
-    position: -webkit-sticky;
-    position: sticky;
-}
-
-div .btn {
-    background-color: grey;
-    color: white;
-}
-
-.empty {
-    display: none;
-}
-
-
 /*tietovisan kuvat*/
 
 .car, .football, .basketball, .volleyball, .icehockey, .baseball, .american, .tennis, .badminton, .running, .gym {
@@ -46,17 +28,6 @@ div .btn {
 
 #football_error, #basket_error, #volleyball_error, #icehockey_error, #baseball_error, #american_error, #tennis_error, #badminton_error, #race_error, #fitness_error {
     color: red;
-}
-
-/*alatunnisteen tilan ja sijainnin määrrittely*/
-
-.teksti {
-    float: right;
-    padding-top: 8px;
-}
-
-th, td {
-    padding-right: 80px;
 }
 
 /*otsikoiden määrrittely*/
