@@ -61,7 +61,7 @@ th {
     display:flex;
     align-items: center;
     height: 500px;
-    background-image: url(../logoAndBackgroundImage/Horizontal\ background\ image.jpg); 
+    background-image: url(../logoAndBackgroundImage/Background\ image.jpg); 
 }
 
 #photoContainer p{
@@ -70,7 +70,7 @@ th {
 
 #usersPortal {
     height: 500px;
-    background-image: url(../logoAndBackgroundImage/Horizontal\ background\ image.jpg); 
+    background-image: url(../logoAndBackgroundImage/Background\ image.jpg); 
 }
 
 /* Muutoksia sidebardin ja articlen väleihin */
