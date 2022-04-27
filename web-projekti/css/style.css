@@ -17,9 +17,6 @@ html{
     padding: 0px;
 }
 
-
-
-
 .navbar-nav img{ 
     float: left;
     height: 100px;
@@ -33,13 +30,23 @@ html{
 }
 
 .navbar-nav li{
-    font-size: 30px;
+    font-size: 20px;
     margin: 0px 0 0 ;
     margin-left:30%;
 }
 
 th, td {
-    padding-right: 80px;
+    padding-right: 60px;
+}
+
+th {
+    color:  rgb(22, 21, 21);
+    font-weight: 645;
+    
+}
+
+#flush {
+    background-color: orange;
 }
 
 /*
@@ -57,7 +64,7 @@ th, td {
 }
 
 #photoContainer p{
-    padding:100px;
+    padding: 50px;
 }
 
 #usersPortal {
@@ -71,11 +78,33 @@ th, td {
     padding-left: 8px !important; 
 } 
 
-@media only screen and (max-width: 576px) {
+/* Sidebarin lihavointi */
+
+div > a {
+    color: rgb(22, 21, 21);
+}
+
+div > a:hover {
+    font-weight: 645;
+    color: black;
+}
+
+span {
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 575px) {
     .pl-3 {
         padding-left: 0px !important;
     }
+
+    #photoContainer p {
+        padding-left: 10px;
+        text-align:left;
+    }
   }
+
+
 
 
 

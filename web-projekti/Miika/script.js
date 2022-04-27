@@ -217,9 +217,9 @@ function endAndStartOver() {
             FRAME.lastChild.remove();
         }
 
-        if(copyOfQuestionArray.length === 0) {                          // <-- pelinlopetus ja kysytään uutta peliä
+        if(copyOfQuestionArray.length === 5) {                          // <-- pelinlopetus ja kysytään uutta peliä
             let endingText = document.createElement("h2");
-            endingText.innerHTML = `Peli loppui! Sait ${pointCounter}/10 oikein!`;
+            endingText.innerHTML = `Peli loppui! Sait ${pointCounter}/5 oikein!`;
         
             FRAME.appendChild(endingText);
             startBtn.style.display = "block";
