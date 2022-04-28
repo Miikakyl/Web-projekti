@@ -135,7 +135,7 @@ function tarkista01() {
     if (a.checked == true) {
         document.getElementById("football").innerHTML = a.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
 
     } else if (b.checked == true) {
         document.getElementById("football").innerHTML = b.value
@@ -155,7 +155,7 @@ function tarkista01() {
     } else if (e.checked == true) {
         document.getElementById("basket").innerHTML = e.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
     } else if (f.checked == true)
         document.getElementById("basket").innerHTML = f.value
 
@@ -167,7 +167,7 @@ function tarkista01() {
     if (g.checked == true) {
         document.getElementById("volleyball").innerHTML = g.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
     } else if (h.checked == true)
         document.getElementById("volleyball").innerHTML = h.value
 
@@ -184,7 +184,7 @@ function tarkista01() {
     } else if (k.checked == true) {
         document.getElementById("icehockey").innerHTML = k.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
     } else if (l.checked == true)
         document.getElementById("icehockey").innerHTML = l.value
 
@@ -201,7 +201,7 @@ function tarkista01() {
     else if (o.checked == true) {
         document.getElementById("baseball").innerHTML = o.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
 
     } else
         document.getElementById("baseball_error").innerHTML = "Vastaukset puuttuivat"
@@ -211,7 +211,7 @@ function tarkista01() {
     if (p.checked == true) {
         document.getElementById("american").innerHTML = p.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
 
     } else if (q.checked == true)
         document.getElementById("american").innerHTML = q.value
@@ -233,7 +233,7 @@ function tarkista01() {
     else if (u.checked == true) {
         document.getElementById("tennis").innerHTML = u.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
 
     } else
         document.getElementById("tennis_error").innerHTML = "Vastaukset puuttuivat"
@@ -248,7 +248,7 @@ function tarkista01() {
     else if (y.checked == true) {
         document.getElementById("badminton").innerHTML = y.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
 
     } else
         document.getElementById("badminton_error").innerHTML = "Vastaukset puuttuivat"
@@ -258,7 +258,7 @@ function tarkista01() {
     if (z.checked == true) {
         document.getElementById("race").innerHTML = z.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
+       
     } else if (ä.checked == true)
         document.getElementById("race").innerHTML = ä.value
 
@@ -274,7 +274,6 @@ function tarkista01() {
     if (w.checked == true) {
         document.getElementById("fitness").innerHTML = w.value
         score += 2
-        document.getElementById("laskuri").innerHTML = score
 
     } else if (å.checked == true)
         document.getElementById("fitness").innerHTML = å.value
@@ -316,10 +315,6 @@ function uusinta02() {
     document.getElementById("badminton_error").innerHTML = ""
     document.getElementById("race_error").innerHTML = ""
     document.getElementById("fitness_error").innerHTML = ""
-
-
-    // Laskurin tyhjennys
-    document.getElementById("laskuri").innerHTML = ""
 
     // Lukittuneiden painikkeiden tyhjennys
 
