@@ -1,14 +1,5 @@
 
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
-const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
-
-let currentQuestion = {}
-let availableQuestions = []
-let score = 0
-let questionCounter = 0
-let acceptingAnswers = true
+//kysymykset
 
 let questions = [
     {
@@ -83,8 +74,21 @@ let questions = [
     }
 ]
 
-const SCORE_POINTS = 10
-const MAX_QUESTIONS = 4
+const question = document.querySelector('#question');
+const choices = Array.from(document.querySelectorAll('.choice-text'));
+const scoreText = document.querySelector('#score');
+const progressText = document.querySelector('#progressText');
+
+let availableQuestions = []
+let currentQuestion = {}
+let acceptingAnswers = true
+let questionCounter = 0
+let score = 0
+
+const MAX_QUESTIONS = 4 
+const SCORE_POINTS = 10 //paljonko yhdestä kysymyksestä saa pisteitä 
+
+//pelin aloitus
 
 startGame = () => {
     score = 0
@@ -92,6 +96,8 @@ startGame = () => {
     availableQuestions = [...questions]
     getNewQuestion()
 }
+
+//uusi kysymys, kysymyslaskuri
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -101,7 +107,7 @@ getNewQuestion = () => {
     }
 
     questionCounter++
-    progressText.innerText = `Kysymys ${questionCounter} / ${5}`
+    progressText.innerText = `Kysymys ${questionCounter} / ${5}` //kysymys laskuri max 5 kysymystä
     
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
@@ -118,6 +124,7 @@ getNewQuestion = () => {
     acceptingAnswers = true
 }
 
+//vastauksen valinta
 
 choices.forEach(choice => {
    
@@ -131,7 +138,7 @@ choices.forEach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 
         'incorrect'
 
-        if(classToApply === 'correct') {
+        if(classToApply === 'correct') {  //jos vastaus on oikein saa pisteen
             incrementScore(SCORE_POINTS)
         }
 
@@ -142,7 +149,7 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
 
-        }, 1000)
+        }, 1100) //kuinka pitkään vastaus näkyy ennen kuin siirtyy seuraavaan kysymykseen
     })
 })
 
