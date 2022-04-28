@@ -3,12 +3,17 @@
 
 html {
     margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../Tuomas/kuvat/Background\ image222.jpg);
+    background-image: cover;
 }
 
 /*tilat reunoille*/
 
 .row {
     gap: 20px;
+    background-image: url(../Tuomas/kuvat/Background\ image222.jpg);
+    background-image: cover;
 }
 
 /*tietovisan kuvat*/
@@ -30,25 +35,36 @@ html {
     color: red;
 }
 
-/*alatunnisteen tilan ja sijainnin määrrittely*/
-
-.teksti {
-    float: right;
-    padding-top: 8px;
-}
-
-th, td {
-    padding-right: 80px;
-}
-
 /*otsikoiden määrrittely*/
 
 h6 {
-    font-size: 14px;
+    font-size: 15px;
     padding-top: 10px;
+    font-weight: bold;
 }
 
+/*Korttien tyylittely*/
+.col-lg {
+    box-shadow: 0px 5px 10px 0px grey;
+      
+}
+  .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover, .box-5:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px grey;
+  }
 
+/*Fonttien pienentäminen responsoinnin takia*/
+
+@media only screen and (max-width: 489px) {
+   h6, p, label {
+       font-size: 14px;
+   }
+
+   h4 {
+       font-size: 20px;
+   }
+
+  }
 
 
 

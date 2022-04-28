@@ -17,11 +17,17 @@
                <img class="car" src="./kuvat/motorcycle-gebee82ee2_19202.jpg" alt="kuva">
             </div>
          </div>
+         <div class="row">
+            <div class="col-lg bg-light border g-4 p-3">
+            <h4>1-2 luokan tietovisa</h4>
+            <p>Tehtävänäsi on valita yksi oikea vaihtoehto kuvanperusteella.</p>
+         </div>
+         </div>
          <!--kysymykset-->
          <div class="row">
-            <div class="col-lg bg-light border g-4 p-2">
+            <div class="col-lg bg-light border g-4 p-2 box-1">
                <img class="football" src="./kuvat/photo-1580560230671-61e01dfdb285.jpg" alt="football">
-               <h6>1. Mitä tilannekuva kertoo?</h6>
+               <h6>1. Mikä tämä kuva on?</h6>
                <form id="reset">
                <input id = "a" type="radio"  name="fav_foot" value="Oikein">
                <label>Jalkapallo</label><br>
@@ -31,9 +37,9 @@
                <label>Sulkapallo</label>
                <p id="football"></p><span id="football_error"></span>
             </div>
-            <div class="col-lg bg-light border g-4 p-2">
+            <div class="col-lg bg-light border g-4 p-2 box-2">
                <img class="basketball" src="./kuvat/action-1869428_1920.jpg" alt="basketball">
-               <h6>2. Mitä tilannekuva kertoo?</h6>
+               <h6>2. Mikä tämä kuva on?</h6>
                <input id = "d" type="radio" name="fav_basket" value="Väärin">
                <label>Pesäpallo</label><br>
                <input id = "e" type="radio" name="fav_basket" value="Oikein">
@@ -42,9 +48,9 @@
                <label>Sulkapallo</label>
                <p id="basket"></p><span id="basket_error"></span>
             </div>
-            <div class="col-lg bg-light border g-4 p-2">
+            <div class="col-lg bg-light border g-4 p-2 box-3">
                <img class="volleyball" src="./kuvat/photo-1602161312299-5524518bc66e.jpg" alt="volleyball">
-               <h6>3. Mitä tilannekuva kertoo?</h6>
+               <h6>3. Mikä tämä kuva on?</h6>
                <input id="g"  type="radio" name="fav_volleyball" value="Oikein">
                <label>Lentopallo</label><br>
                <input id="h" type="radio" name="fav_volleyball" value="Väärin">
@@ -53,9 +59,9 @@
                <label>Kilpajuoksu</label>
                <p id="volleyball"></p><span id="volleyball_error"></span>
             </div>
-            <div class="col-lg bg-light border g-4 p-2">
+            <div class="col-lg bg-light border g-4 p-2 box-4">
                <img class="icehockey" src="./kuvat/sport-6784082_1920.jpg" alt="icehockey">
-               <h6>4. Mitä tilannekuva kertoo?</h6>
+               <h6>4. Mikä tämä kuva on?</h6>
                <input id="j" type="radio" name="fav_icehockey" value="Väärin">
                <label>Pesäpallo</label><br>
                <input id="k" type="radio" name="fav_icehockey" value="Oikein">
@@ -64,9 +70,9 @@
                <label>Tennis</label>
                <p id="icehockey"></p><span id="icehockey_error"></span>
             </div>
-            <div class="col-lg bg-light border g-4 p-2">
+            <div class="col-lg bg-light border g-4 p-2 box-5">
                <img class="baseball" src="./kuvat/baseball-4313452_1920.jpg" alt="baseball">
-               <h6>5. Mitä tilannekuva kertoo?</h6>
+               <h6>5. Mikä tämä kuva on?</h6>
                <input id="m" type="radio" name="fav_baseball" value="Väärin">
                <label>Tennis</label><br>
                <input id="n" type="radio" name="fav_baseball" value="Väärin">
@@ -76,71 +82,13 @@
                <p id="baseball"></p><span id="baseball_error"></span>
             </div>
          </div>
-         <div class="row">
-            <div class="col-lg bg-light border g-4 p-2">
-               <img class="american" src="./kuvat/football-67701_1920.jpg" alt="american">
-               <h6>6. Mitä tilannekuva kertoo?</h6>
-               <input id="p" type="radio" name="fav_american" value="Oikein">
-               <label>Jalkapallo</label><br>
-               <input id="q" type="radio" name="fav_american" value="Väärin">
-               <label>Jääkiekko</label><br>
-               <input id="r" type="radio" name="fav_american" value="Väärin">
-               <label>Tennis</label>
-               <p id="american"></p><span id="american_error"></span>
-            </div>
-            <div class="col-lg bg-light border g-4 p-2">
-               <img class="tennis" src="./kuvat/photo-1554068865-24cecd4e34b8.jpg" alt="tennis">
-               <h6>7. Mitä tilannekuva kertoo?</h6>
-               <input id="s" type="radio" name="fav_tennis" value="Väärin">
-               <label>Pesäpallo</label><br>
-               <input id="t" type="radio" name="fav_tennis" value="Väärin">
-               <label>Sulkapallo</label><br>
-               <input id="u" type="radio" name="fav_tennis" value="Oikein">
-               <label>Tennis</label>
-               <p id="tennis"></p><span id="tennis_error"></span>
-            </div>
-            <div class="col-lg bg-light border g-4 p-2">
-               <img class ="badminton" src="./kuvat/photo-1626224583764-f87db24ac4ea.jpg" alt="badminton">
-               <h6>8. Mitä tilannekuva kertoo?</h6>
-               <input id="v" type="radio" name="fav_badminton" value="Väärin">
-               <label>Pesäpallo</label><br>
-               <input id="x" type="radio" name="fav_badminton" value="Väärin">
-               <label>Lentopallo</label><br>
-               <input id="y" type="radio" name="fav_badminton" value="Oikein">
-               <label>Sulkapallo</label>
-               <p id="badminton"></p><span id="badminton_error"></span>
-            </div>
-            <div class="col-lg bg-light border g-4 p-2">
-               <img class="running" src="./kuvat/action-1834465_1920.jpg" alt="running">
-               <h6>9. Mitä tilannekuva kertoo?</h6>
-               <input id="z" type="radio" name="fav_race" value="Oikein">
-               <label>Kilpajuoksu</label><br>
-               <input id="ä" type="radio" name="fav_race" value="Väärin">
-               <label>Jääkiekko</label><br>
-               <input id="ö" type="radio" name="fav_race" value="Väärin">
-               <label>Kuntoilu</label>
-               <p id="race"></p><span id="race_error"></span>
-            </div>
-            <div class="col-lg bg-light border g-4 p-2">
-               <img class="gym" src="./kuvat/photo-1571019614242-c5c5dee9f50b.jpg" alt="gym">
-               <h6>10. Mitä tilannekuva kertoo?</h6>
-               <input id="w" type="radio" name="fav_fitness" value="Oikein">
-               <label>Kuntoilu</label><br>
-               <input id="å" type="radio" name="fav_fitness" value="Väärin">
-               <label>Pesäpallo</label><br>
-               <input id="wå" type="radio" name="fav_fitness" value="Väärin">
-               <label>Sulkapallo</label>
-               <p id="fitness"></p><span id="fitness_error"></span>
-            </form>
-            </div>
-         </div>
+
          <!--Painikkeet-->
          <div class="row">
             <div class="col-lg bg-light border g-4 p-3">
                <button type="button" class="btn btn-secondary btn-sm" onclick="tarkista01()">Tarkistuspainike</button>
                <button type="button" class="btn btn-secondary btn-sm" onclick="uusinta02()">Kokeile uudestaan</button>
                <a href="../../kotisivu.html" class="btn btn-secondary btn-sm" role="button" aria-pressed="true">Palaa takaisin</a>
-               <p class="teksti">Pisteet <span id ="laskuri"></span> / 20p.</p>
             </div>
          </div>
          <!--https://getbootstrap.com/docs/5.1/getting-started/introduction/-->
