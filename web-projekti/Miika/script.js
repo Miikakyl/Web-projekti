@@ -25,7 +25,7 @@ const QUESTIONS_ARRAY = [
     },
     {
     question: "Montako kuukautta on 4 vuotta?",
-    rightAnswer:"46kk",
+    rightAnswer:"48kk",
     wrongAnswerA:"36kK",
     wrongAnswerB:"40kk"
     },
