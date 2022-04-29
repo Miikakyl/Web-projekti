@@ -107,7 +107,7 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "Mikä näistä ei kuulu Eurooppaan?",
+        question: "Kysymys 1, <br> Mikä näistä ei kuulu Eurooppaan?",
         answers: {
           a: "Argentina",
           b: "Suomi",
@@ -116,7 +116,7 @@
         correctAnswer: "a"
       },
       {
-        question: "Missä kuukaudessa on 28 päivää?",
+        question: "Kysymys 2, <br> Missä kuukaudessa on 28 päivää?",
         answers: {
           a: "Tammikuu",
           b: "Helmikuu",
@@ -125,7 +125,7 @@
         correctAnswer: "b"
       },
       {
-        question: "Mikä on Kili?",
+        question: "Kysymys 3, <br> Mikä on Kili?",
         answers: {
           a: "Nuori vuohi",
           b: "Kala",
@@ -134,7 +134,7 @@
         correctAnswer: "a"
       },
       {
-        question: "Jos rikot posliiniastian, laitatko sen mihin jäteastiaan?",
+        question: " Kysymys 4, <br> Jos rikot posliiniastian, laitatko sen mihin jäteastiaan?",
         answers: {
           a: "Muovinkeräykseen",
           b: "Sekajätteeseen",
@@ -143,7 +143,7 @@
         correctAnswer: "b"
       },
       {
-        question: "Saksan pääkaupunki?",
+        question: " Kysymys 5, <br> Saksan pääkaupunki?",
         answers: {
           a: "Berliini",
           b: "Hanoi",
@@ -152,7 +152,7 @@
         correctAnswer: "a"
       },
       {
-        question: "Mikä on Ruotsin pääkaupunki?",
+        question: " Kysymys 6, <br> Mikä on Ruotsin pääkaupunki?",
         answers: {
           a: "Oslo",
           b: "Tallinna",
@@ -161,7 +161,7 @@
         correctAnswer: "c"
       },
       {
-        question: "Mikä on Belgian pääkaupunki?",
+        question: " Kysymys 7, <br> Mikä on Belgian pääkaupunki?",
         answers: {
           a: "Bryssel",
           b: "Varsova",
@@ -170,7 +170,7 @@
         correctAnswer: "a"
       },
       {
-        question: "Mikä on Ukrainan pääkaupunki?",
+        question: " Kysymys 8, <br> Mikä on Ukrainan pääkaupunki?",
         answers: {
           a: "Bukarest",
           b: "Kiova",
@@ -179,7 +179,7 @@
         correctAnswer: "b"
       },
       {
-        question: "Mikä on Norjan pääkaupunki?",
+        question: " Kysymys 9, <br> Mikä on Norjan pääkaupunki?",
         answers: {
           a: "Oslo",
           b: "Tukholma",
@@ -188,7 +188,7 @@
         correctAnswer: "a"
       },
       {
-        question: "Mikä seuraavista luonnonvaraisista eläimistä nukkuu talviunta?",
+        question: " Kysymys 10, <br> Mikä seuraavista luonnonvaraisista eläimistä nukkuu talviunta?",
         answers: {
           a: "Susi",
           b: "Joutsen",
