@@ -1,20 +1,17 @@
 (function(){
-    // Functions
     function buildQuiz(){
-      // variable to store the HTML output
+      // functio
       const output = [];
   
-      // for each question...
+     
       myQuestions.forEach(
         (currentQuestion, questionNumber) => {
   
-          // variable to store the list of possible answers
+         
           const answers = [];
   
-          // and for each available answer...
           for(letter in currentQuestion.answers){
   
-            // ...add an HTML radio button
             answers.push(
               `<label>
                 <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -24,7 +21,7 @@
             );
           }
   
-          // add this question and its answers to the output
+ 
           output.push(
             `<div class="slide">
               <div class="question"> ${currentQuestion.question} </div>
@@ -34,43 +31,43 @@
         }
       );
   
-      // finally combine our output list into one string of HTML and put it on the page
+   
       quizContainer.innerHTML = output.join('');
     }
   
     function showResults(){
   
-      // gather answer containers from our quiz
+     
       const answerContainers = quizContainer.querySelectorAll('.answers');
   
-      // keep track of user's answers
+     
       let numCorrect = 0;
   
-      // for each question...
+      
       myQuestions.forEach( (currentQuestion, questionNumber) => {
   
-        // find selected answer
+       
         const answerContainer = answerContainers[questionNumber];
         const selector = `input[name=question${questionNumber}]:checked`;
         const userAnswer = (answerContainer.querySelector(selector) || {}).value;
   
-        // if answer is correct
+       
         if(userAnswer === currentQuestion.correctAnswer){
-          // add to the number of correct answers
+          
           numCorrect++;
   
-          // color the answers green
+        
           answerContainers[questionNumber].style.color = 'lightgreen';
         }
-        // if answer is wrong or blank
+        
         else{
-          // color the answers red
+          
           answerContainers[questionNumber].style.color = 'red';
         }
       });
   
-      // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} oikein ${myQuestions.length}:sta`;
+      
+      resultsContainer.innerHTML = `${numCorrect} oikein ${myQuestions.length}:sta, nyt voit edellistä klikkaamalla käydä katsomassa oikeat vastaukset`;
     }
   
     function showSlide(n) {
@@ -101,13 +98,13 @@
       showSlide(currentSlide - 1);
     }
   
-    // Variables
+    // kysymysten tekoa
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "Kysymys 1, <br> Mikä näistä ei kuulu Eurooppaan?",
+        question: "Kysymys 1, Mikä näistä ei kuulu Eurooppaan?",
         answers: {
           a: "Argentina",
           b: "Suomi",
@@ -116,7 +113,7 @@
         correctAnswer: "a"
       },
       {
-        question: "Kysymys 2, <br> Missä kuukaudessa on 28 päivää?",
+        question: "Kysymys 2, Missä kuukaudessa on 28 päivää?",
         answers: {
           a: "Tammikuu",
           b: "Helmikuu",
@@ -125,7 +122,7 @@
         correctAnswer: "b"
       },
       {
-        question: "Kysymys 3, <br> Mikä on Kili?",
+        question: "Kysymys 3, Mikä on Kili?",
         answers: {
           a: "Nuori vuohi",
           b: "Kala",
@@ -134,7 +131,7 @@
         correctAnswer: "a"
       },
       {
-        question: " Kysymys 4, <br> Jos rikot posliiniastian, laitatko sen mihin jäteastiaan?",
+        question: " Kysymys 4, Jos rikot posliiniastian, laitatko sen mihin jäteastiaan?",
         answers: {
           a: "Muovinkeräykseen",
           b: "Sekajätteeseen",
@@ -143,7 +140,7 @@
         correctAnswer: "b"
       },
       {
-        question: " Kysymys 5, <br> Saksan pääkaupunki?",
+        question: " Kysymys 5, Saksan pääkaupunki?",
         answers: {
           a: "Berliini",
           b: "Hanoi",
@@ -152,7 +149,7 @@
         correctAnswer: "a"
       },
       {
-        question: " Kysymys 6, <br> Mikä on Ruotsin pääkaupunki?",
+        question: " Kysymys 6, Mikä on Ruotsin pääkaupunki?",
         answers: {
           a: "Oslo",
           b: "Tallinna",
@@ -161,7 +158,7 @@
         correctAnswer: "c"
       },
       {
-        question: " Kysymys 7, <br> Mikä on Belgian pääkaupunki?",
+        question: " Kysymys 7, Mikä on Belgian pääkaupunki?",
         answers: {
           a: "Bryssel",
           b: "Varsova",
@@ -170,7 +167,7 @@
         correctAnswer: "a"
       },
       {
-        question: " Kysymys 8, <br> Mikä on Ukrainan pääkaupunki?",
+        question: " Kysymys 8, Mikä on Ukrainan pääkaupunki?",
         answers: {
           a: "Bukarest",
           b: "Kiova",
@@ -179,7 +176,7 @@
         correctAnswer: "b"
       },
       {
-        question: " Kysymys 9, <br> Mikä on Norjan pääkaupunki?",
+        question: " Kysymys 9, Mikä on Norjan pääkaupunki?",
         answers: {
           a: "Oslo",
           b: "Tukholma",
@@ -188,31 +185,30 @@
         correctAnswer: "a"
       },
       {
-        question: " Kysymys 10, <br> Mikä seuraavista luonnonvaraisista eläimistä nukkuu talviunta?",
+        question: " Kysymys 10, Mikä seuraavista luonnonvaraisista eläimistä nukkuu talviunta?",
         answers: {
           a: "Susi",
           b: "Joutsen",
           c: "Karhu ʕ•ᴥ•ʔ",
-          d: "Lohi"
         },
         correctAnswer: "c"
       }
       
     ];
   
-    // Kick things off
+    
     buildQuiz();
   
-    // Pagination
+   
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
   
-    // Show the first slide
+  
     showSlide(currentSlide);
   
-    // Event listeners
+   
     submitButton.addEventListener('click', showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
