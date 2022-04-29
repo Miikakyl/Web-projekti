@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Matematiikka tietovisa 5-6 luokat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+</head>
+<body>
+    <!--Header-->
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center mb-3" id="header">
+            <div class="col-lg-8 bg-light border g-0 p-4">
+                <h2>Tervetuloa 5-6 luokkien matematiikkavisaan!</h2>
+                <p>Pystytkö vastaamaan kaikkiin viiteen kysymykseen oikein?</p>
+                <p>Voit aloittaa visan paimalla <span>Uudet kysymykset</span> nappia.</p>
+                <a href="">Takaisin kotisivulle</a>
+            </div>
+        </div>
+
+        <!--Questions-->
+        <div class="row justify-content-center text-center mb-2" id="questions">
+            <div class="col-lg-2 bg-light border g-0 p-3">
+                <h5>Kysymys 1.</h5>
+                <p>Mikä on neliön pinta-ala, kun yhden sivun pituus on senttimetreinä:</p> <p id="question1" class="question"></p>
+                <label></label>
+                <input type="number" id="answer1">
+                <p id="error1" class="error"></p>
+            </div>
+            <div class="col-lg-2 bg-light border g-0 p-4">
+                <h5>Kysymys 2.</h5>
+                <p>Kuinka paljon on 423 + X, kun X on:</p> <p id="question2" class="question"></p>
+                <label></label>
+                <input type="number" id="answer2">
+                <p id="error2" class="error"></p>
+            </div>
+            <div class="col-lg-2 bg-light border g-0 p-3">
+                <h5>Kysymys 3.</h5>
+                <p>Laske suorakulmion piiri, kun yksi sivu on 9cm ja toinen on senttimetreiltään:</p> <p id="question3" class="question"></p>
+                <label></label>
+                <input type="number" id="answer3">
+                <p id="error3" class="error"></p>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center mb-3" id="questions">
+            <div class="col-lg-2 bg-light border g-0 p-3">
+                <h5>Kysymys 4.</h5>
+                <p>Muunna X senttimetriä metreiksi kun X on:</p> <p id="question4" class="question"></p>
+                <label></label>
+                <input type="number" id="answer4">
+                <p id="error4" class="error"></p>
+            </div>
+            <div class="col-lg-2 bg-light border g-0 p-3">
+                <h5>Kysymys 5.</h5>
+                <p>Paljonko on X - 624, kun X on:</p> <p id="question5" class="question"></p>
+                <label></label>
+                <input type="number" id="answer5">
+                <p id="error5" class="error"></p>
+            </div>
+        </div>
+
+        <!--Buttons-->
+        <div class="row justify-content-center text-center mb-3" id="buttons">
+            <div class="col-lg-8">
+                <button type="button" id="checkAnswers" onclick="checkAnswers()">Tarkista vastaukset</button>
+                <button type="button" onclick="restartGame()">Uudet kysymykset</button>
+            </div>
+        </div>
+
+        <!--Feedback & logo-->
+        <div class="row justify-content-center text-center" id="Feedback">
+            <div class="col-lg-8">
+                
+                <h4 id="feedback"></h4>>
+                <img src="photos/affinity photo.png" alt="logo" id="image">
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>

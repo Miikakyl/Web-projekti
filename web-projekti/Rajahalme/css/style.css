@@ -1,0 +1,69 @@
+html {
+    margin: 50px;
+}
+
+.row {
+    gap: 15px;
+}
+
+.question, span {
+    font-weight: bold;
+}
+
+.p {
+    font-size: 10px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+#header p {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#header a {
+    background-color: rgb(225, 225, 225);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+#header a:hover{
+    background-color: grey;
+    color: white;
+}
+
+button {
+    background-color: rgb(225, 225, 225);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+}
+
+#questions p {
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+label{
+    margin-top: 30px;
+}
+
+.feedback {
+    font-size: 20px;
+    font-weight: bold;
+}
