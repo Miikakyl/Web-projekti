@@ -12,10 +12,10 @@ function checkAnswers(){
     let question5 = Number(document.getElementById("question5").textContent);
 
     let answer1 = Number(document.getElementById("answer1").value);
-    let answer2 = Number(document.getElementById("answer1").value);
-    let answer3 = Number(document.getElementById("answer1").value);
-    let answer4 = Number(document.getElementById("answer1").value);
-    let answer5 = Number(document.getElementById("answer1").value);
+    let answer2 = Number(document.getElementById("answer2").value);
+    let answer3 = Number(document.getElementById("answer3").value);
+    let answer4 = Number(document.getElementById("answer4").value);
+    let answer5 = Number(document.getElementById("answer5").value);
 
     console.log(answer2);
     console.log(question2);
