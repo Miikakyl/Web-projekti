@@ -32,9 +32,6 @@ body {
 .results {
     text-align: center;
     font-size: 50px;
-    background: linear-gradient(rgb(216, 45, 255), rgb(50, 20, 255));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .napit {

@@ -72,6 +72,7 @@ else {
     rtrnbutton.classList.remove('hide')
     resultBox.classList.remove('hide')
     resultBox.innerHTML = `${results - 10}/${currentQuestionIndex + 1} oikein`;
+    questionContainerElement.classList.add('hide')
     }
 }
 
