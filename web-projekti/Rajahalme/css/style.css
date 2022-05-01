@@ -15,7 +15,7 @@ html {
 }
 
 .error {
-    color: red;
+    font-weight: bold;
     margin-top: 10px;
 }
 
@@ -59,8 +59,9 @@ button:hover {
     margin-bottom: 0px;
 }
 
-label{
+.label{
     margin-top: 30px;
+    width: 10px;
 }
 
 .feedback {
