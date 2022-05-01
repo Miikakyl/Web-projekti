@@ -27,12 +27,12 @@ function checkAnswers(){
     let ERROR2 = "Muista kirjoittaa vastauksesi!";
 
     //Question 1
-    if (answer1.length === 0){
-        document.getElementById("error1").innerHTML = ERROR2;
-    } 
     if(answer1 === (question1 * question1)){
         document.getElementById("error1").innerHTML = "Oikein!";
         rightAnswers++
+    if (answer1.length === 0){
+            document.getElementById("error1").innerHTML = ERROR2;
+    } 
     } 
     else if(answer1 !== (question1 * question1)){
         document.getElementById("error1").innerHTML = ERROR1 + (question1 * question1)
