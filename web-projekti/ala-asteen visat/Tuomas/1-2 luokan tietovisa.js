@@ -74,11 +74,9 @@ function tarkista01() {
 
     } else if (b.checked == true) {
         document.getElementById("football").innerHTML = b.value
-        document.getElementById("laskuri").innerHTML = ""
 
     } else if (c.checked == true) {
         document.getElementById("football").innerHTML = c.value
-        document.getElementById("laskuri").innerHTML = ""
 
     } else
         document.getElementById("football_error").innerHTML = "Vastaukset puuttuivat"
