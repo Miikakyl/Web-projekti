@@ -17,9 +17,9 @@ function checkAnswers(){
     let answer4 = Number(document.getElementById("answer1").value);
     let answer5 = Number(document.getElementById("answer1").value);
 
-    console.log(answer1);
-    console.log(question1);
-    console.log(question1 * question1)
+    console.log(answer2);
+    console.log(question2);
+    console.log(423 + question2)
 
     let rightAnswers = 0;
 
@@ -27,12 +27,12 @@ function checkAnswers(){
     let ERROR2 = "Muista kirjoittaa vastauksesi!";
 
     //Question 1
+    if (answer1.length === 0){
+        document.getElementById("error1").innerHTML = ERROR2;
+    } 
     if(answer1 === (question1 * question1)){
         document.getElementById("error1").innerHTML = "Oikein!";
         rightAnswers++
-    } 
-    if (answer1 === ""){
-        document.getElementById("error1").innerHTML = ERROR2;
     } 
     else if(answer1 !== (question1 * question1)){
         document.getElementById("error1").innerHTML = ERROR1 + (question1 * question1)
