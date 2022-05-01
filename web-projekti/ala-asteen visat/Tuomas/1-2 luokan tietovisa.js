@@ -70,8 +70,6 @@ function tarkista01() {
     if (a.checked == true) {
         document.getElementById("football").innerHTML = a.value
         score += 2
-       
-
     } else if (b.checked == true) {
         document.getElementById("football").innerHTML = b.value
 
