@@ -1,4 +1,12 @@
-#banner{
+#bgContainer {
+    height: 100%;
+    width: 100%;
+
+    background-image: url("../bg.png");
+    background-repeat: none;
+    background-size: cover;
+}
+#banner {
     width: 150px;
 
     animation-name:slideLeft;
@@ -31,11 +39,11 @@ h3 {
     width: 500px;
     height: 80px;
     padding: 20px;
-    font-size:20px;
+    font-size: 20px;
     border: none;
     background-color: #9e23ff;
     border-radius: 15px;
-    font-size:20px;
+    font-size: 20px;
     color:#ffff;
 
     transition: 0.2s;
@@ -53,9 +61,9 @@ h3 {
     width: 400px;
     height: 80px;
     background-color: #9e23ff;
-    border:none;
+    border: none;
     border-radius: 15px;
-    font-size:2.15vh;
+    font-size: 2.15vh;
     color:#ffff;
 
     transition: 0.1s;
@@ -75,10 +83,10 @@ button:hover {
 }
 #bulbArea {
     display: none;
-    width:fit-content
+    width: fit-content
 }
 .row-resultTxt{
-    height:60px;
+    height: 60px;
 }
 
 @keyframes show {
@@ -89,7 +97,7 @@ button:hover {
         opacity: 1;
     }
 }
-@keyframes slideRight{
+@keyframes slideRight {
     from {
         margin-left: 100%;
     }
@@ -97,7 +105,7 @@ button:hover {
         margin-left: 0%;
     }
 }
-@keyframes slideLeft{
+@keyframes slideLeft {
     from {
         margin-right: 100%;
     }
