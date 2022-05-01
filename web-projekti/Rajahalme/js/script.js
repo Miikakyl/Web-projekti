@@ -27,45 +27,59 @@ function checkAnswers(){
     let ERROR2 = "Muista kirjoittaa vastauksesi!";
 
     //Question 1
-    if(answer1 = ""){
-        document.getElementById("error1").innerHTML = ERROR2;
-    } if (answer1 != (question1 * question1)){
-        document.getElementById("error1").innerHTML = ERROR1 + (question1 * question1);
-    } else {
-        document.getElementById("error1").innerHTML = "Oikein!"
+    if(answer1 === (question1 * question1)){
+        document.getElementById("error1").innerHTML = "Oikein!";
         rightAnswers++
+    } 
+    if (answer1 === ""){
+        document.getElementById("error1").innerHTML = ERROR2;
+    } 
+    else if(answer1 !== (question1 * question1)){
+        document.getElementById("error1").innerHTML = ERROR1 + (question1 * question1)
     }
     //Question 2
-    if(answer2 = ""){
-        document.getElementById("error2").innerHTML = ERROR2;
-    } else if (answer2 != (423 + question2)){
-        document.getElementById("error2").innerHTML = ERROR1 + (423 + question2);
-    } else {
+    if(answer2 === (423 + question2)){
+        document.getElementById("error2").innerHTML = "Oikein!";
         rightAnswers++
+    } 
+    if(answer2 === ""){
+        document.getElementById("error2").innerHTML = ERROR2;
+    } 
+    else if(answer2 !== (423 + question2)){
+        document.getElementById("error2").innerHTML = ERROR1 + (423 + question2);
     }
     //Question3
-    if(answer3 = ""){
-        document.getElementById("error3").innerHTML = ERROR2;
-    } else if (answer3 != (9 + 9 + question3 + question3)){
-        document.getElementById("error3").innerHTML = ERROR1 + (9 + 9 + question3 + question3);
-    } else {
+    if(answer3 === (9 + 9 + question3 + question3)){
+        document.getElementById("error3").innerHTML = "Oikein!";
         rightAnswers++
+    } 
+    if(answer3 === ""){
+        document.getElementById("error3").innerHTML = ERROR2;
+    } 
+    else if(answer3 !== (9 + 9 + question3 + question3)){
+        document.getElementById("error3").innerHTML = ERROR1 + (9 + 9 + question3 + question3);
     }
     //Question4
-    if(answer4 = ""){
-        document.getElementById("error4").innerHTML = ERROR2;
-    } else if (answer4 != (question4 / 100)){
-        document.getElementById("error4").innerHTML = ERROR1 + (question4 / 100);
-    } else {
+    if(answer4 === (question4 / 100)){
+        document.getElementById("error4").innerHTML = "Oikein!";
         rightAnswers++
+    } 
+    if(answer4 === ""){
+        document.getElementById("error4").innerHTML = ERROR2;
+    } 
+    else if(answer4 !== (question4 / 100)){
+        document.getElementById("error4").innerHTML = ERROR1 + (question4 / 100);
     }
     //Question5
-    if(answer5 = ""){
-        document.getElementById("error5").innerHTML = ERROR2;
-    } else if (answer5 != (question5 - 624)){
-        document.getElementById("error5").innerHTML = ERROR1 + (question5 - 624);
-    } else {
+    if(answer5 === (question5 - 624)){
+        document.getElementById("error5").innerHTML = "Oikein!";
         rightAnswers++
+    } 
+    if(answer5 === ""){
+        document.getElementById("error5").innerHTML = ERROR2;
+    } 
+    else if(answer5 !== (question5 - 624)){
+        document.getElementById("error5").innerHTML = ERROR1 + (question5 - 624);
     }
 
     document.getElementById("Feedback").innerHTML = "Tuloksesi on " + rightAnswers;
